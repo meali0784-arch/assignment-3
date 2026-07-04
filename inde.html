@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+<h2>Multiplication Table</h2>
+
+<input type="number" id="num" placeholder="Table Number">
+<input type="number" id="times" placeholder="Number of Times">
+
+<button onclick="table()">Show Table</button>
+
+<p id="result"></p>
+
+<script>
+
+function table(){
+
+    let num = document.getElementById("num").value;
+    let times = document.getElementById("times").value;
+
+    let output = "";
+
+    for(let i=1; i<=times; i++){
+
+        output += num + " x " + i + " = " + (num*i) + "<br>";
+
+    }
+
+    document.getElementById("result").innerHTML = output;
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Numbers</title>
+</head>
+<body>
+
+<h2>Even Numbers</h2>
+
+<input type="number" id="number">
+
+<button onclick="even()">Show</button>
+
+<p id="result"></p>
+
+<script>
+
+function even(){
+
+    let number = document.getElementById("number").value;
+
+    let output = "";
+
+    for(let i=2; i<=number; i=i+2){
+
+        output += i + " ";
+
+    }
+
+    document.getElementById("result").innerHTML = output;
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+</head>
+<body>
+
+<h2>Countdown</h2>
+
+<input type="number" id="number">
+
+<button onclick="countdown()">Start</button>
+
+<p id="result"></p>
+
+<script>
+
+function countdown(){
+
+    let number = document.getElementById("number").value;
+
+    let output = "";
+
+    for(let i=number; i>=1; i--){
+
+        output += i + "<br>";
+
+    }
+
+    document.getElementById("result").innerHTML = output;
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum</title>
+</head>
+<body>
+
+<h2>Sum of Numbers</h2>
+
+<input type="number" id="number">
+
+<button onclick="sum()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+
+function sum(){
+
+    let number = document.getElementById("number").value;
+
+    let total = 0;
+
+    for(let i=1; i<=number; i++){
+
+        total = total + i;
+
+    }
+
+    document.getElementById("result").innerHTML = "Sum = " + total;
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern</title>
+</head>
+<body>
+
+<h2>Number Pattern</h2>
+
+<input type="number" id="number">
+
+<button onclick="pattern()">Show Pattern</button>
+
+<p id="result"></p>
+
+<script>
+
+function pattern(){
+
+    let number = document.getElementById("number").value;
+
+    let output = "";
+
+    for(let i=1; i<=number; i++){
+
+        for(let j=1; j<=i; j++){
+
+            output += j;
+
+        }
+
+        output += "<br>";
+
+    }
+
+    document.getElementById("result").innerHTML = output;
+
+}
+
+</script>
+
+</body>
+</html>
